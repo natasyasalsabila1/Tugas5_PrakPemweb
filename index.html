@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natasya Salsabila — Mahasiswa Teknik Informatika</title>
+<meta name="description" content="Portofolio Raka Pratama, mahasiswa Teknik Informatika semester 4 yang sedang belajar membangun web dan software dari nol.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="brand">RP<span class="brand__dot">/</span>04</span>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO / SHEET 01 -->
+  <section class="sheet" id="hero">
+    <div class="sheet__frame">
+      <div class="sheet__label">
+        <span>SHEET 01</span><span>SKALA 1:1</span><span>TERAKHIR DIUBAH 2026</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Masih dalam proses belajar —</p>
+        <h1 class="hero__title">
+          Mahasiswa Teknik<br>
+          Informatika yang lagi<br>
+          <span class="hero__title--accent">merakit kemampuan.</span>
+        </h1>
+        <p class="hero__desc">
+          Saya Natasya Salsabila, semester 4 di Teknik Informatika. Belajar membangun
+          web dan software sedikit demi sedikit — dari tugas kuliah, project
+          kelompok, sampai eksperimen sendiri di luar kelas.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyek" class="btn btn--primary">Lihat project</a>
+          <a href="#kontak" class="btn btn--ghost">Hubungi saya</a>
+        </div>
+      </div>
+
+      <div class="hero__diagram" aria-hidden="true">
+        <svg id="blueprintSvg" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="210" cy="210" r="150" class="draw-line" pathLength="100"/>
+          <circle cx="210" cy="210" r="150" class="draw-tick-circle"/>
+          <line x1="210" y1="20" x2="210" y2="400" class="draw-line" pathLength="100"/>
+          <line x1="20" y1="210" x2="400" y2="210" class="draw-line" pathLength="100"/>
+          <path d="M120 260 L160 150 L200 220 L240 120 L280 240 L320 160" class="draw-line draw-line--accent" pathLength="100"/>
+          <circle cx="160" cy="150" r="4" class="node"/>
+          <circle cx="240" cy="120" r="4" class="node"/>
+          <circle cx="320" cy="160" r="4" class="node"/>
+          <text x="228" y="45" class="svg-label">X</text>
+          <text x="380" y="228" class="svg-label">Y</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SHEET 02 -->
+  <section class="sheet" id="tentang">
+    <div class="sheet__frame">
+      <div class="sheet__label">
+        <span>SHEET 02</span><span>TENTANG</span><span>REV. A</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__col">
+          <h2 class="section-title">Latar belakang</h2>
+          <p>
+            Saat ini menempuh semester 4 Teknik Informatika di Universitas Islam Riau. Mulai mengenal
+            pemrograman lewat mata kuliah dasar, lalu keterusan belajar
+            sendiri lewat tutorial dan kursus online karena penasaran gimana
+            caranya sebuah website atau aplikasi itu bekerja dari dalam.
+          </p>
+          <p>
+            Belum jago-jago amat, tapi terus mencoba mengerjakan project kecil
+            di luar tugas kuliah supaya apa yang dipelajari di kelas benar-benar
+            nempel dan bisa dipraktikkan.
+          </p>
+        </div>
+        <div class="about__col about__stats">
+          <div class="stat">
+            <span class="stat__value" data-count="4">0</span>
+            <span class="stat__unit"></span>
+            <span class="stat__label">Semester berjalan</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-count="9">0</span>
+            <span class="stat__unit"></span>
+            <span class="stat__label">Project kuliah &amp; pribadi</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-count="3">0</span>
+            <span class="stat__unit"></span>
+            <span class="stat__label">Sertifikat kursus online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / SHEET 03 -->
+  <section class="sheet" id="keahlian">
+    <div class="sheet__frame">
+      <div class="sheet__label">
+        <span>SHEET 03</span><span>KOMPONEN</span><span>TOLERANSI ±0</span>
+      </div>
+      <h2 class="section-title">Sedang dipelajari</h2>
+      <div class="skills__grid">
+
+        <article class="skill-card">
+          <span class="skill-card__index">A1</span>
+          <h3>Dasar pemrograman</h3>
+          <p>Fondasi dari mata kuliah algoritma & struktur data, dipraktikkan lewat latihan soal dan tugas.</p>
+          <ul class="tag-list">
+            <li>C</li><li>Java</li><li>Python</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__index">A2</span>
+          <h3>pemrograman web</h3>
+          <p>Belajar membangun halaman web dari nol, dari markup sampai sedikit interaktivitas.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__index">A3</span>
+          <h3>Basis data</h3>
+          <p>Memahami rancangan tabel sederhana dan query dasar dari mata kuliah basis data.</p>
+          <ul class="tag-list">
+            <li>MySQL</li><li>ERD</li><li>SQL dasar</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__index">A4</span>
+          <h3>Kerja tim & tools</h3>
+          <p>Terbiasa kerja kelompok untuk tugas kuliah, memakai version control dasar untuk kolaborasi.</p>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>Trello</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / SHEET 04 -->
+  <section class="sheet" id="proyek">
+    <div class="sheet__frame">
+      <div class="sheet__label">
+        <span>SHEET 04</span><span>STUDI KASUS</span><span>DIAJUKAN UNTUK REVIEW</span>
+      </div>
+      <h2 class="section-title">Project yang pernah dikerjakan</h2>
+      <div class="projects">
+
+        <article class="project">
+          <div class="project__meta">
+            <span>NO. 001</span><span>Tugas Kelompok</span>
+          </div>
+          <h3>Sistem Peminjaman Buku Perpustakaan</h3>
+          <p>Project mata kuliah Basis Data — aplikasi sederhana untuk mencatat peminjaman dan pengembalian buku di perpustakaan kampus.</p>
+          <div class="project__tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span>NO. 002</span><span>Project Pribadi</span>
+          </div>
+          <h3>Aplikasi To-Do List</h3>
+          <p>Belajar JavaScript dengan bikin aplikasi catatan tugas harian, lengkap dengan fitur tandai selesai dan simpan data.</p>
+          <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span>NO. 003</span><span>Tugas Kuliah</span>
+          </div>
+          <h3>Program Kalkulator Nilai Mahasiswa</h3>
+          <p>Tugas mata kuliah Algoritma & Struktur Data — program sederhana untuk menghitung dan mengurutkan nilai mahasiswa.</p>
+          <div class="project__tags"><span>Java</span><span>Struktur Data</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / SHEET 05 -->
+  <section class="sheet" id="kontak">
+    <div class="sheet__frame">
+      <div class="sheet__label">
+        <span>SHEET 05</span><span>KONTAK</span><span>DISETUJUI</span>
+      </div>
+      <div class="contact__grid">
+        <div>
+          <h2 class="section-title">Yuk terhubung</h2>
+          <p>Terbuka untuk ngobrol soal project kuliah, kolaborasi belajar, atau sekadar diskusi seputar coding. Jangan sungkan menghubungi.</p>
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:natasyasalsabila@student.ac.id">natasyasalsabila@student.uir.ac.id</a></li>
+            <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/natasyasalsabila1</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label>
+            Nama
+            <input type="text" name="name" required placeholder="Nama lengkap">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="nama@email.com">
+          </label>
+          <label>
+            Pesan
+            <textarea name="message" rows="4" required placeholder="Ceritakan proyek Anda..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Kirim pesan</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>© 2026 Natasya Salsabila. Dirancang &amp; dibangun sendiri.</span>
+    <button id="backToTop" class="btn btn--ghost btn--small">Kembali ke atas</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
